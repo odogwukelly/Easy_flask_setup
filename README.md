@@ -32,13 +32,14 @@ This is a Bash script designed to automate the setup of a Flask application. It 
 - **Bash Shell**: Ensure you are using a Unix-based environment (Linux, macOS, or WSL for Windows).
 - **Python Installed**: Python 3.+ must be installed on your system.
 - **pip Installed**: Python's package manager `pip` must be installed.
+- **virtual Environment Installed and activated**: Python's virtual environment must be installed and activated.
 
 ---
 
 ## How to Use
 
-1. Save the script to a file, e.g., `setup_flask_app.sh`.
-2. Make the script executable:
-   ```bash
-   chmod +x setup_flask_app.sh
-   ```
+1. **Install virtual environment** using: `python -m venv (name_of_your_virtual_environment)`. e.g `python -m venv myVenv`. **myVenv** is the name of the virtual environment.
+2. **Activate your virtual environment** using: `source myVenv/Scripts/activate` or `source myVenv/bin/activate`
+3. **Clone the repository** using: `git clone https://github.com/odogwukelly/Easy_flask_setup.git`.
+4. **change directory to the cloned repository** using: `cd Easy_flask_setup`
+5. **Run the Script** using: `./flask_set_up.sh`. then it will prompt you to enter you project name/title
